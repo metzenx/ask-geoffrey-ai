@@ -18,13 +18,6 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1.5">
-            <span className="h-2 w-2 rounded-full bg-indigo-400 animate-pulse" />
-            <span className="text-sm font-medium text-indigo-300 md:text-base">
-              AI Automation for Growing Businesses
-            </span>
-          </div>
-
           <h1 className="font-heading text-[42px] font-bold leading-[1.1] tracking-[-0.02em] md:text-[52px] lg:text-[64px]">
             <span className="bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-transparent">
               Free AI Audit.

@@ -1,4 +1,8 @@
-import { Bot } from 'lucide-react'
+'use client'
+
+import { usePathname } from 'next/navigation'
+import Link from 'next/link'
+import Image from 'next/image'
 
 function XIcon({ className }: { className?: string }) {
   return (
@@ -8,13 +12,32 @@ function XIcon({ className }: { className?: string }) {
   )
 }
 
+const anchorLinks = [
+  { label: 'How It Works', hash: '#how-it-works' },
+  { label: 'Why Us', hash: '#why-us' },
+  { label: 'Solutions', hash: '#solutions' },
+  { label: 'FAQ', hash: '#faq' },
+]
+
 export function Footer() {
+  const pathname = usePathname()
+  const isHome = pathname === '/'
+  const resolveHash = (hash: string) => (isHome ? hash : `/${hash}`)
+
   return (
     <footer className="border-t border-white/10 bg-black py-12">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 md:flex-row">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
-            <Bot className="h-5 w-5 text-indigo-400" />
+            <div className="h-6 w-6 shrink-0">
+              <Image
+                src="/geoffrey-head-mark.svg"
+                alt="Geoffrey robot head"
+                width={24}
+                height={24}
+                className="h-full w-full object-contain"
+              />
+            </div>
             <span className="text-sm font-semibold text-white">Ask Geoffrey AI</span>
           </div>
           <a
@@ -29,18 +52,21 @@ export function Footer() {
         </div>
 
         <div className="flex gap-6">
-          <a href="#how-it-works" className="cursor-pointer text-sm text-neutral-500 transition-colors duration-200 hover:text-white">
-            How It Works
-          </a>
-          <a href="#why-us" className="cursor-pointer text-sm text-neutral-500 transition-colors duration-200 hover:text-white">
-            Why Us
-          </a>
-          <a href="#solutions" className="cursor-pointer text-sm text-neutral-500 transition-colors duration-200 hover:text-white">
-            Solutions
-          </a>
-          <a href="#faq" className="cursor-pointer text-sm text-neutral-500 transition-colors duration-200 hover:text-white">
-            FAQ
-          </a>
+          {anchorLinks.map((link) => (
+            <a
+              key={link.hash}
+              href={resolveHash(link.hash)}
+              className="cursor-pointer text-sm text-neutral-500 transition-colors duration-200 hover:text-white"
+            >
+              {link.label}
+            </a>
+          ))}
+          <Link
+            href="/services"
+            className="cursor-pointer text-sm text-neutral-500 transition-colors duration-200 hover:text-white"
+          >
+            Services
+          </Link>
         </div>
 
         <p className="text-xs text-neutral-600">

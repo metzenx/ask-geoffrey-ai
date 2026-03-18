@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Geoffrey Robot Head Mark</title>
+  <desc id="desc">A full-color robot head icon with a blue square face, yellow dome, red eyes, and dark outline.</desc>
+  <defs>
+    <linearGradient id="domeGradient" x1="64" y1="14" x2="64" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8cd57" />
+      <stop offset="1" stop-color="#e9a93c" />
+    </linearGradient>
+    <linearGradient id="headGradient" x1="26" y1="40" x2="102" y2="104" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8bd7ff" />
+      <stop offset="1" stop-color="#64b9eb" />
+    </linearGradient>
+    <linearGradient id="earGradient" x1="0" y1="66" x2="1" y2="66" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0a53d" />
+      <stop offset="1" stop-color="#d98326" />
+    </linearGradient>
+  </defs>
+  <g stroke="#1f2a44" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M38 30C42 20 51 14 64 14C77 14 86 20 90 30V34H38V30Z" fill="url(#domeGradient)" stroke-width="2.8" />
+    <path d="M34 32H94C97.314 32 100 34.686 100 38V43H28V38C28 34.686 30.686 32 34 32Z" fill="#5eaedc" stroke-width="2.6" />
+
+    <rect x="22" y="38" width="84" height="66" rx="12" fill="url(#headGradient)" stroke-width="2.8" />
+    <rect x="28" y="44" width="72" height="54" rx="9" fill="#ffffff" fill-opacity="0.08" stroke-width="0" />
+
+    <ellipse cx="18" cy="66" rx="10" ry="13" fill="url(#earGradient)" stroke-width="2.8" />
+    <ellipse cx="18" cy="66" rx="6.2" ry="8.2" fill="#c97721" stroke-width="2.2" />
+    <ellipse cx="110" cy="66" rx="10" ry="13" fill="url(#earGradient)" stroke-width="2.8" />
+    <ellipse cx="110" cy="66" rx="6.2" ry="8.2" fill="#c97721" stroke-width="2.2" />
+
+    <circle cx="46" cy="67" r="13.5" fill="#fff7e7" stroke-width="2.8" />
+    <circle cx="82" cy="67" r="13.5" fill="#fff7e7" stroke-width="2.8" />
+    <circle cx="46" cy="67" r="6.9" fill="#e44e58" stroke-width="2.4" />
+    <circle cx="82" cy="67" r="6.9" fill="#e44e58" stroke-width="2.4" />
+
+    <rect x="35" y="84" width="58" height="16" rx="6" fill="#f6efda" stroke-width="2.8" />
+    <path d="M49 84V100M63.5 84V100M78 84V100" stroke-width="2.3" />
+
+    <circle cx="31" cy="48" r="2.4" fill="#d0dae2" stroke-width="1.8" />
+    <circle cx="97" cy="48" r="2.4" fill="#d0dae2" stroke-width="1.8" />
+    <circle cx="31" cy="94" r="2.4" fill="#d0dae2" stroke-width="1.8" />
+    <circle cx="97" cy="94" r="2.4" fill="#d0dae2" stroke-width="1.8" />
+  </g>
+</svg>

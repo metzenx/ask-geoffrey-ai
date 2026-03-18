@@ -6,9 +6,9 @@ import { Card } from '@/components/ui/card'
 const steps = [
   {
     step: '01',
-    title: 'Free Growth Audit',
+    title: 'Intake',
     description:
-      'We analyze your workflows, identify automation opportunities, and deliver a clear action plan before you spend a dollar.',
+      'Discovery call, workflow audit, and goal alignment to understand your business inside and out.',
     features: [
       'Tailored to your business',
       'Workflow & opportunity review',
@@ -21,32 +21,62 @@ const steps = [
   },
   {
     step: '02',
-    title: 'Custom Automation',
+    title: 'Setup',
     description:
-      'We design and deploy AI systems for lead response, follow-up, scheduling, and operations. Built around how you actually work.',
+      'Infrastructure provisioning, tool integration, and agent configuration tailored to your stack.',
     features: [
-      'Lead capture & response',
-      'Automated follow-up',
-      'Booking & intake flows',
-      'Operational efficiency',
+      'System architecture design',
+      'Tool & platform integration',
+      'Agent configuration',
+      'Environment provisioning',
     ],
-    cta: 'Why Choose Us',
-    ctaHref: '#why-us',
+    cta: 'Learn More',
+    ctaHref: '/services',
     highlight: false,
   },
   {
     step: '03',
-    title: 'Launch & Optimize',
+    title: 'Training',
     description:
-      'We launch your system, track performance through clear reporting, and continuously optimize so your automation improves as your business grows.',
+      'AI model training on your data, workflows, and brand voice for accurate, on-brand output.',
+    features: [
+      'Custom data training',
+      'Brand voice calibration',
+      'Workflow pattern learning',
+      'Quality benchmarking',
+    ],
+    cta: 'Learn More',
+    ctaHref: '/services',
+    highlight: false,
+  },
+  {
+    step: '04',
+    title: 'Launch',
+    description:
+      'Go-live deployment with real-time monitoring and hands-on initial optimization.',
     features: [
       'Go-live deployment',
-      'Real-time performance dashboards',
-      'Ongoing optimization',
-      'Transparent reporting',
+      'Real-time monitoring',
+      'Performance dashboards',
+      'Initial optimization',
     ],
     cta: 'See Solutions',
     ctaHref: '#solutions',
+    highlight: false,
+  },
+  {
+    step: '05',
+    title: 'Ongoing Optimization',
+    description:
+      'Continuous performance tracking, improvement cycles, and scaling as your needs evolve.',
+    features: [
+      'Performance tracking',
+      'Continuous improvement',
+      'Transparent reporting',
+      'Scalable growth',
+    ],
+    cta: 'Why Choose Us',
+    ctaHref: '#why-us',
     highlight: false,
   },
 ]
@@ -76,7 +106,7 @@ export function Services() {
             How It Works
           </p>
           <h2 className="font-heading text-[42px] font-bold leading-[1.1] tracking-[-0.02em] text-white md:text-[52px] lg:text-[64px]">
-            Three Steps. Zero Guesswork.
+            Five Steps. Zero Guesswork.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-xl leading-relaxed text-neutral-300 md:text-2xl">
             From audit to automation. A clear path to smarter operations.
@@ -84,7 +114,7 @@ export function Services() {
         </motion.div>
 
         <motion.div
-          className="grid gap-6 md:grid-cols-3"
+          className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
           variants={container}
           initial="hidden"
           whileInView="show"
